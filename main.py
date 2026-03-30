@@ -1,7 +1,10 @@
+# main.py
+# Основной файл проекта — меню и интерфейс
+
 from ai_utils import summarize_text, rewrite_text, chat_response
 
 def menu():
-    print("\n=== AI Assistant ===")
+    print("\n=== AI Text Assistant ===")
     print("1. Суммаризация текста")
     print("2. Переписать текст")
     print("3. Чат с ИИ")
@@ -28,10 +31,11 @@ def main():
             print("ИИ:", chat_response(text))
 
         elif choice == "0":
+            print("Выход. Пока!")
             break
 
         else:
-            print("Неверный выбор")
+            print("Неверный выбор, попробуй снова.")
 
 
 if __name__ == "__main__":
